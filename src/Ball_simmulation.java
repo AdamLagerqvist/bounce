@@ -23,7 +23,7 @@ public class Ball_simmulation extends Canvas implements Runnable{
 
     public Ball_simmulation() {
         Balls.add(new Ball(30, 30,0,1));
-        JFrame frame = new JFrame("A simmulasiton of my balls bounsing");
+        JFrame frame = new JFrame("A simmulasiton of my balls bouncing");
         this.setSize(900,900);
         frame.add(this);
         frame.pack();
