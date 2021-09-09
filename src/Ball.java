@@ -41,13 +41,9 @@ public class Ball {
 
     public void X_bouce(double time_step){
         if (X_local+X_velocity*time_step >= 890){
-            X_Clac(((890 - X_local)/X_velocity));
             Y_velocity*=0.9;
             X_velocity*=-0.9;
-            //X_local += (X_velocity * time_step);
-            //X_local = 0 - X_local
         } else {
-            X_Clac(-X_local/X_velocity);
             Y_velocity*=0.9;
             X_velocity*=-0.9;
         }

@@ -45,9 +45,10 @@ public class Ball_simmulation extends Canvas implements Runnable, KeyListener{
             }
         });
         Balls.removeAll(Balls_to_remove);
-        if(Balls.size() < 50){
+        if(Balls.size() < 200){
             Balls.add(new Ball((Math.random() * 850) + 20, (Math.random() * 850) + 20,(Math.random() * 40) - 30,(Math.random() * 40) + 10));
         }
+        System.out.println(Balls.size());
     }
 
     private void draw(){
